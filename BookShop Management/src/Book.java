@@ -5,24 +5,34 @@ import java.util.List;
 // Base class - Book
 public class Book {
 
+<<<<<<< HEAD
     int bookId;
+=======
+>>>>>>> origin/main
     int quantity;
     private String title;
     private String author;
     private double price;
 
+<<<<<<< HEAD
     public Book(int bookId, String title, String author, double price, int quantity) {
         this.bookId = bookId;
+=======
+    public Book(String title, String author, double price, int quantity) {
+>>>>>>> origin/main
         this.title = title;
         this.author = author;
         this.price = price;
         this.quantity = quantity;
     }
 
+<<<<<<< HEAD
     public int getBookId() {
         return bookId;
     }
 
+=======
+>>>>>>> origin/main
     public String getTitle() {
         return title;
     }
@@ -40,7 +50,11 @@ public class Book {
     }
 
     public void displayInfo() {
+<<<<<<< HEAD
         System.out.println("Book ID :" + bookId + ",Title: " + title + ", Author: " + author + ", Price: NLE" + price + ", Quantity: " + quantity);
+=======
+        System.out.println("Title: " + title + ", Author: " + author + ", Price: NLE" + price + ", Quantity: " + quantity);
+>>>>>>> origin/main
     }
 }
 
@@ -53,10 +67,16 @@ class BookShop{
         this.items = new ArrayList<>();
     }
 
+<<<<<<< HEAD
     public Book addBook(Book Book) {
         items.add(Book);
         System.out.println("Book added to the shop.");
         return Book;
+=======
+    public void addBook(Book book) {
+        items.add(book);
+        System.out.println("Book added to the shop.");
+>>>>>>> origin/main
     }
 
     public void displayShopItems() {

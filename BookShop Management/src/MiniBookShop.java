@@ -6,12 +6,18 @@ public class MiniBookShop {
         BookShop bookShop = new BookShop();
         Scanner scanner = new Scanner(System.in);
 
+<<<<<<< HEAD
 
         // Seller adds books to the shop
         System.out.println("..............Seller, add books to the Shop:......................");
 
         for (int i = 1; true; i++) {
 
+=======
+        // Seller adds books to the shop
+        System.out.println("..............Seller, add books to the Shop:......................");
+        for (int i = 0; i < 3; i++) {
+>>>>>>> origin/main
             System.out.print("Enter Book Title: ");
             String title = scanner.nextLine();
             System.out.print("Enter Author: ");
@@ -22,9 +28,14 @@ public class MiniBookShop {
             int quantity = scanner.nextInt();
             scanner.nextLine(); // Consume the newline character
 
+<<<<<<< HEAD
             Book newBook = new Book(i,title, author, price, quantity);
             bookShop.addBook(newBook);
             break;
+=======
+            Book newBook = new Book(title, author, price, quantity);
+            bookShop.addBook(newBook);
+>>>>>>> origin/main
         }
 
         // Buyer makes purchases
@@ -33,7 +44,10 @@ public class MiniBookShop {
             System.out.println("1. Display Book Items");
             System.out.println("2. Buy a Book");
             System.out.println("3. Exit");
+<<<<<<< HEAD
             System.out.println("4. Add New Books");
+=======
+>>>>>>> origin/main
 
             System.out.print("Enter your choice: ");
             int choice = scanner.nextInt();
@@ -55,6 +69,7 @@ public class MiniBookShop {
                     break;
 
                 case 3:
+<<<<<<< HEAD
 
                     System.out.println("Exiting Mini Book Shop. Goodbye!");
                     scanner.close();
@@ -77,6 +92,12 @@ public class MiniBookShop {
                         bookShop.addBook(newBook1);
                         break;
                     }
+=======
+                    System.out.println("Exiting Mini Book Shop. Goodbye!");
+                    scanner.close();
+                    System.exit(0);
+
+>>>>>>> origin/main
                 default:
                     System.out.println("Invalid choice. Please enter a valid option.");
             }
